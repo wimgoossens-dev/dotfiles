@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaults
+[
+  // 1. HORIZONTAL VISUAL TEXT SELECTIONS (M and I)
+  {
+    "key": "m",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus && neovim.mode == 'visual'"
+  },
+  {
+    "key": "i",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus && neovim.mode == 'visual'"
+  },
+
+  // 2. VERTICAL VISUAL TEXT SELECTIONS (N and E)
+  {
+
+    "key": "n",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus && neovim.mode == 'visual'"
+  },
+  {
+    "key": "e",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus && neovim.mode == 'visual'"
+  }
+]
