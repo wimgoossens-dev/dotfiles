@@ -1,2 +1,2 @@
 # Change Emacs Lisp in Elisp
-*.el linguist-language=emacs-lisp
+*.el linguist-language=elisp
