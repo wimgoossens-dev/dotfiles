@@ -27,7 +27,7 @@ dotfiles/
 * **Guix (`manifest.scm`):** A purely functional, transactional package profile written in **GNU Guile Scheme**. It handles isolated, reproducible user-level binary deployments (like `ripgrep` and `htop`) inside an independent `/gnu/store/` matrix, completely isolating my development toolchains from Fedora's core system libraries.
 
 ### ⌨️ Layout Ergonomics (Colemak-DH Wide)
-* **`Keymap-Keychron K3 Pro...json`:** A heavily customized layout optimized for low finger travel and mechanical efficiency. It deploys the **Colemak-DH matrix layout**, paired with a **Wide Mod shift parameter** to reduce pinky strain and increase typing ergonomics during long terminal system management routines.
+* **`Keymap-Keychron K3 Pro...json`:** A heavily customized layout optimized for low finger travel and mechanical efficiency. It deploys the **Colemak-DHv wide layout**, designed to reduce pinky strain and increase typing ergonomics during long terminal system management routines.
 <div align="center">
   <img src="assets/K3proKeyboard.jpg" width="777"/>
 </div>
