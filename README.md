@@ -7,6 +7,7 @@ Welcome to my personal developer environment configuration repository. This work
 ```text
 dotfiles/
 ├── README.md              # This profile documentation file
+├── manifest.scm           # Declarative GNU Guix manifest for user-level packages and toolchains
 ├── .zshrc                 # Shell configurations, aliases, and environment variables
 ├── kitty.conf             # GPU-accelerated terminal graphics and emulator properties
 ├── current-theme.conf     # Active terminal aesthetic syntax color palettes
@@ -22,6 +23,10 @@ dotfiles/
 
 ## ⚡ Core Ecosystems
 
+### ❄️ Functional Package Infrastructure (GNU Guix)
+<img src="https://wikimedia.org" alt="GNU Guix Wildebeest Logo" width="160" align="right" />
+* **Guix (`manifest.scm`):** A purely functional, transactional package profile written in **GNU Guile Scheme**. It handles isolated, reproducible user-level binary deployments (like `ripgrep` and `htop`) inside an independent `/gnu/store/` matrix, completely isolating my development toolchains from Fedora's core system libraries.
+<br clear="right"/>
 ### ⌨️ Layout Ergonomics (Colemak-DH Wide)
 * **`Keymap-Keychron K3 Pro...json`:** A heavily customized layout optimized for low finger travel and mechanical efficiency. It deploys the **Colemak-DH matrix layout**, paired with a **Wide Mod shift parameter** to reduce pinky strain and increase typing ergonomics during long terminal system management routines.
 
@@ -54,4 +59,7 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 mkdir -p ~/.config/kitty
 ln -sf ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/dotfiles/current-theme.conf ~/.config/kitty/current-theme.conf
+
+# 4. Synchronize package profiles and pull dependencies
+guix pull && guix package --manifest=~/dotfiles/manifest.scm
 ```
