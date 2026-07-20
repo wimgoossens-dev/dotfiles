@@ -4,4 +4,9 @@
 ;; capture the channels being used, as returned by "guix describe".
 ;; See the "Replicating Guix" section in the manual.
 
-(specifications->manifest (list "ripgrep" "htop" "glibc-locales"))
+(specifications->manifest
+ (list "emacs-pgtk"
+       "ripgrep"
+       "htop"
+       "glibc-locales")
+)
