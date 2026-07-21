@@ -24,7 +24,7 @@ dotfiles/
 ## ⚡ Core Ecosystems
 
 ### ❄️ Functional Package Infrastructure (GNU Guix)  
-* **Guix (`manifest.scm`):** A purely functional, transactional package profile written in **GNU Guile Scheme**. It handles isolated, reproducible user-level binary deployments (like `ripgrep` and `htop`) inside an independent `/gnu/store/` matrix, completely isolating my development toolchains from Fedora's core system libraries.
+* **Guix (`manifest.scm`):** A purely functional, transactional package profile written in **GNU Guile Scheme**. It handles isolated, reproducible user-level binary deployments inside an independent `/gnu/store/` matrix, completely isolating my development toolchains from Fedora's core system libraries.
 
 ### ⌨️ Layout Ergonomics (Colemak-DH Wide)
 * **`Keymap-Keychron K3 Pro...json`:** A heavily customized layout optimized for low finger travel and mechanical efficiency. It deploys the **Colemak-DHv wide layout**, designed to reduce pinky strain and increase typing ergonomics during long terminal system management routines.
@@ -37,7 +37,7 @@ dotfiles/
 * **Zsh (`.zshrc`):** Implements dynamic environment variable path bindings, automated shell completions, custom Git execution aliases, and interactive terminal utility scripting.
 
 ### 🔮 Text Editors & IDEs
-* **Emacs (`init.el`, `config.el`):** My main configuration platform written in optimized **Elisp**. It handles advanced, literate document workflows and structural IDE automation.
+* **Emacs (`init.el`, `config.el`):** My main configuration platform written in optimized **Emacs lisp**. It handles advanced, literate document workflows and structural IDE automation.
 * **Neovim (`init.lua`):** A lightweight, blazingly fast text rendering platform utilizing modern Lua configuration vectors for lightning-fast terminal-based file overrides and quick text corrections.
 * **VSCodium (`settings.json`, `keybindings.json`):** A telemetry-free, telemetry-purged desktop coding framework rigged with matched keyboard macros to smooth out cross-platform development workflows.
 
@@ -45,8 +45,8 @@ dotfiles/
 
 ## 🚀 Installation & Local Environment Sync
 
-> [!WARNING]  
-> Running installation steps indiscriminately will overwrite your active shell profile configuration arrays. Backup your system environment directories before symlinking tracking records.
+⚠️ **WARNING** 
+>Running installation steps indiscriminately will overwrite your active shell profile configuration arrays. Backup your system environment directories before symlinking tracking records.
 
 To map these configurations into your active desktop environment profile directories:
 
