@@ -11,8 +11,7 @@ dotfiles/
 ├── .zshrc                 # Shell configurations, aliases, and environment variables
 ├── kitty.conf             # GPU-accelerated terminal graphics and emulator properties
 ├── current-theme.conf     # Active terminal aesthetic syntax color palettes
-├── config.el              # Literate Emacs package and feature configurations
-├── init.el                # Emacs core initialization and custom runtime configurations
+├── .spacemacs             # Monolithic Spacemacs configuration
 ├── init.lua               # Neovim core startup logic and runtime setup
 ├── keybindings.json       # VSCodium customized global shortcut architectures
 ├── settings.json          # VSCodium core workspaces, telemetry settings, and syntax rules
@@ -37,7 +36,7 @@ dotfiles/
 * **Zsh (`.zshrc`):** Implements dynamic environment variable path bindings, automated shell completions, custom Git execution aliases, and interactive terminal utility scripting.
 
 ### 🔮 Text Editors & IDEs
-* **Emacs (`init.el`, `config.el`):** My main configuration platform written in optimized **Emacs lisp**. It handles advanced, literate document workflows and structural IDE automation.
+* **Spacemacs (`.spacemacs`):** My main configuration platform written in optimized **Emacs lisp**. It handles advanced, literate document workflows and structural IDE automation for Python. The keymappings are inpired on `evil-mode-colemak` for my specific layout variant. It also handles a 'wq' cluster to escape insert mode.
 * **Neovim (`init.lua`):** A lightweight, blazingly fast text rendering platform utilizing modern Lua configuration vectors for lightning-fast terminal-based file overrides and quick text corrections.
 * **VSCodium (`settings.json`, `keybindings.json`):** A telemetry-free, telemetry-purged desktop coding framework rigged with matched keyboard macros to smooth out cross-platform development workflows.
 
@@ -62,6 +61,9 @@ mkdir -p ~/.config/kitty
 ln -sf ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf ~/dotfiles/current-theme.conf ~/.config/kitty/current-theme.conf
 
-# 4. Synchronize package profiles and pull dependencies
+# 4. Link the custom Colemak Spacemacs profile file
+ln -sf ~/dotfiles/spacemacs ~/.spacemacs
+
+# 5. Synchronize package profiles and pull dependencies
 guix pull && guix package --manifest=~/dotfiles/manifest.scm
 ```
