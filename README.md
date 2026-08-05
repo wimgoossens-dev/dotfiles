@@ -25,7 +25,7 @@ dotfiles/
 ### ❄️ Functional Package Infrastructure (GNU Guix)  
 * **Guix (`manifest.scm`):** A purely functional, transactional package profile written in **GNU Guile Scheme**. It handles isolated, reproducible user-level binary deployments inside an independent `/gnu/store/` matrix, completely isolating my development toolchains from Fedora's core system libraries.
 
-### ⌨️ Layout Ergonomics (Colemak-DH Wide)
+### ⌨️ Layout Ergonomics (Colemak-DHv Wide)
 * **`Keymap-Keychron K3 Pro...json`:** A heavily customized layout optimized for low finger travel and mechanical efficiency. It deploys the **Colemak-DHv wide layout**, designed to reduce pinky strain and increase typing ergonomics during long terminal system management routines.
 <div align="center">
   <img src="assets/ColemakDHv_wide.png" width="777"/>
